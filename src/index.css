@@ -3,3 +3,14 @@ body{
     background-color: var(--color-gray-800);
     color: var(--color-gray-300);
 }
+@layer components {
+  .scrollbar-hidden {
+    @apply overflow-auto;
+    scrollbar-width: none;       /* Firefox */
+    -ms-overflow-style: none;    /* IE 10+ */
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;               /* Chrome, Safari, Edge */
+  }
+}

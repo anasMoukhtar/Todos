@@ -19,7 +19,7 @@ function App() {
       </h1>
       <div className="mx-auto space-y-10 text-center">
         
-        <div className='max-w-2xl p-6 mx-auto bg-slate-700 shadow-md rounded-lg space-y-5 overflow-y-auto h-[400px]'>
+        <div className='scrollbar-hidden max-w-2xl p-6 mx-auto bg-slate-700 shadow-md rounded-lg space-y-5 overflow-y-auto h-[400px]'>
           <AddTodoInput todos={todos} onAddTodo={handleAddTodo} />
           {todos.map((todo: Todo) => (
             <TodoItem key={todo.id} todo={todo} onCompletedChange={handleCompletedChange} onDeleteTodo={handleDeleteTodo} />
